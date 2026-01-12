@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauricio Cruz | @meximalist</title>
+    <meta name="description" content="Mexican Web3 Builder - Podcaster, Developer, Community Builder">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mauricio Cruz | @meximalist">
+    <meta property="og:description" content="Mexican Web3 Builder - Construyendo el futuro desde México">
+    <meta property="og:image" content="https://mexi.wtf/assets/avatar.png">
+    <meta property="og:url" content="https://mexi.wtf/es/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@meximalist">
+    <meta name="twitter:creator" content="@meximalist">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mexi-black': '#0a0a0a',
+                        'mexi-dark': '#111111',
+                        'mexi-gray': '#1a1a1a',
+                        'mexi-emerald': '#10b981',
+                        'mexi-indigo': '#6366f1',
+                    },
+                    fontFamily: {
+                        'exo': ['"Exo 2"', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
+        }
+        .font-exo { font-family: 'Exo 2', sans-serif; }
+
+        .card {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(16, 185, 129, 0.3);
+            box-shadow: 0 10px 40px rgba(16, 185, 129, 0.1);
+        }
+
+        .social-icon {
+            transition: all 0.2s ease;
+        }
+        .social-icon:hover {
+            transform: scale(1.1);
+            color: #10b981;
+        }
+
+        .badge {
+            font-size: 0.65rem;
+            padding: 2px 8px;
+            border-radius: 9999px;
+        }
+        .badge-live { background: #10b981; color: #000; }
+        .badge-beta { background: #6366f1; color: #fff; }
+        .badge-new { background: #f59e0b; color: #000; }
+
+        .lang-toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-100">
+
+    <!-- Language Toggle -->
+    <a href="../en/" class="lang-toggle text-gray-400 hover:text-mexi-emerald text-sm font-medium px-3 py-1 rounded-full border border-gray-700 hover:border-mexi-emerald transition-all" onclick="localStorage.setItem('lang','en')">
+        EN
+    </a>
+
+    <div class="max-w-2xl mx-auto px-4 py-12">
+
+        <!-- Hero Section -->
+        <header class="text-center mb-12">
+            <img
+                src="../assets/avatar.png"
+                alt="Mauricio Cruz"
+                class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-mexi-emerald/30 shadow-lg shadow-mexi-emerald/20"
+            >
+            <h1 class="font-exo text-3xl font-bold mb-2">Mauricio Cruz</h1>
+            <p class="text-mexi-emerald text-lg font-medium mb-3">@meximalist</p>
+            <p class="text-gray-400 text-sm max-w-md mx-auto">
+                Mexican Web3 Builder | Podcaster | Developer | Community Builder
+            </p>
+        </header>
+
+        <!-- Social Links -->
+        <nav class="flex justify-center gap-4 mb-12 flex-wrap">
+            <a href="https://x.com/meximalist" target="_blank" class="social-icon text-gray-400 hover:text-mexi-emerald" title="X/Twitter">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://instagram.com/mexi.wtf" target="_blank" class="social-icon text-gray-400 hover:text-pink-500" title="Instagram">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://tiktok.com/@mexiweb3" target="_blank" class="social-icon text-gray-400 hover:text-white" title="TikTok">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@proofofvalue" target="_blank" class="social-icon text-gray-400 hover:text-red-500" title="YouTube">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://t.me/mexiweb3" target="_blank" class="social-icon text-gray-400 hover:text-blue-400" title="Telegram">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mauriciocruzcpp/" target="_blank" class="social-icon text-gray-400 hover:text-blue-600" title="LinkedIn">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/mexiweb3" target="_blank" class="social-icon text-gray-400 hover:text-white" title="GitHub">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://open.spotify.com/show/0FJmpJIkWwUfspn1eNlCWB" target="_blank" class="social-icon text-gray-400 hover:text-green-500" title="Spotify">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            </a>
+        </nav>
+
+        <!-- Projects Section -->
+        <section class="mb-10">
+            <h2 class="font-exo text-lg font-semibold text-gray-300 mb-4 flex items-center gap-2">
+                <span class="text-mexi-emerald">></span> Proyectos
+            </h2>
+
+            <div class="space-y-3">
+                <!-- BandaWeb3 -->
+                <a href="https://bw3.mexi.wtf" target="_blank" class="card block rounded-xl p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="font-exo font-semibold text-white">BandaWeb3</span>
+                                <span class="badge badge-live">LIVE</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Podcast Web3 en Español - X Spaces</p>
+                        </div>
+                        <span class="text-mexi-emerald">→</span>
+                    </div>
+                </a>
+
+                <!-- SpacesGuru -->
+                <a href="https://spacesguru.com" target="_blank" class="card block rounded-xl p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="font-exo font-semibold text-white">SpacesGuru</span>
+                                <span class="badge badge-live">LIVE</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Transcribe y analiza X Spaces con IA</p>
+                        </div>
+                        <span class="text-mexi-emerald">→</span>
+                    </div>
+                </a>
+
+                <!-- SpacesToContent -->
+                <a href="https://meximalist.gumroad.com/l/txkuww" target="_blank" class="card block rounded-xl p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="font-exo font-semibold text-white">SpacesToContent</span>
+                                <span class="badge badge-new">$49</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Claude Code Skill para crear contenido</p>
+                        </div>
+                        <span class="text-mexi-emerald">→</span>
+                    </div>
+                </a>
+
+                <!-- Cazul -->
+                <a href="https://cazul.vercel.app" target="_blank" class="card block rounded-xl p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="font-exo font-semibold text-white">Cazul</span>
+                                <span class="badge badge-beta">BETA</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Property Management con IA</p>
+                        </div>
+                        <span class="text-mexi-emerald">→</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="mb-10">
+            <h2 class="font-exo text-lg font-semibold text-gray-300 mb-4 flex items-center gap-2">
+                <span class="text-mexi-indigo">></span> Comunidad
+            </h2>
+
+            <div class="space-y-3">
+                <!-- ETH Mexico -->
+                <a href="https://ethmexico.org" target="_blank" class="card block rounded-xl p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="font-exo font-semibold text-white">Ethereum México</span>
+                                <span class="badge badge-new">2025</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Impulsando Ethereum en México</p>
+                        </div>
+                        <span class="text-mexi-indigo">→</span>
+                    </div>
+                </a>
+
+                <!-- mxweb3 -->
+                <a href="https://chat.whatsapp.com/KSSGzqJqu9oEi2ER1mrQFy" target="_blank" class="card block rounded-xl p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="font-exo font-semibold text-white">mxweb3 WhatsApp</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Comunidad Web3 México</p>
+                        </div>
+                        <span class="text-mexi-indigo">→</span>
+                    </div>
+                </a>
+
+                <!-- Participa en BandaWeb3 -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSezH91i6mFeFOzjedL2yL1MpR7e8YmCvKkkosPdlD-kQ8ZtOA/viewform" target="_blank" class="card block rounded-xl p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="font-exo font-semibold text-white">Participa en BandaWeb3</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">¿Quieres ser invitado? Aplica aquí</p>
+                        </div>
+                        <span class="text-mexi-indigo">→</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section class="mb-10">
+            <h2 class="font-exo text-lg font-semibold text-gray-300 mb-4 flex items-center gap-2">
+                <span class="text-mexi-emerald">></span> Conecta
+            </h2>
+
+            <div class="space-y-3">
+                <!-- About me -->
+                <a href="https://bw3.mexi.wtf/es/about.html" target="_blank" class="card block rounded-xl p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="font-exo font-semibold text-white">Acerca de mí</span>
+                            <p class="text-gray-400 text-sm">Mi historia y background</p>
+                        </div>
+                        <span class="text-mexi-emerald">→</span>
+                    </div>
+                </a>
+
+                <!-- Calendly -->
+                <a href="https://calendly.com/mexiweb3/intro-call" target="_blank" class="card block rounded-xl p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="font-exo font-semibold text-white">Agenda una llamada</span>
+                            <p class="text-gray-400 text-sm">30 min intro call</p>
+                        </div>
+                        <span class="text-mexi-emerald">→</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm pt-8 border-t border-gray-800">
+            <p class="mb-2">Construyendo desde México</p>
+            <p class="text-xs text-gray-600">Hecho con Claude Code</p>
+        </footer>
+
+    </div>
+</body>
+</html>

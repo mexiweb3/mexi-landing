@@ -30,7 +30,7 @@ Landing page personal de Mauricio Cruz (@meximalist).
 | `isla.mexi.wtf` | theportal.to/... | Portal NFT |
 | `partner.mexi.wtf` | forms.gle/... | Formulario de partners |
 | `venganse.mexi.wtf` | docs.google.com/... | Invitación a evento |
-| `yo.mexi.wtf` | foro.mexi.wtf | Acerca de mi |
+| `yo.mexi.wtf` | bw3.mexi.wtf/es/about.html | Acerca de mi |
 
 ## Proyectos Incluidos
 
@@ -51,7 +51,7 @@ Landing page personal de Mauricio Cruz (@meximalist).
 | YouTube | @proofofvalue | Activo |
 | Telegram | @mexiweb3 | Comunidad |
 | LinkedIn | linkedin.com/in/mauriciocruzcpp | Creciendo |
-| Spotify | BandaWeb3 Podcast | Podcast |
+| Spotify | [BandaWeb3 Podcast](https://open.spotify.com/show/0FJmpJIkWwUfspn1eNlCWB) | Podcast |
 | GitHub | mexiweb3 | Código |
 
 ## Comunidad
@@ -106,6 +106,10 @@ Para agregar nuevo subdominio hosteado en Vercel:
 Para agregar redirect simple:
 1. GoDaddy → Forwarding → Add
 2. Subdominio → URL destino, Tipo: Permanente (301)
+
+## Tareas Pendientes
+
+- [ ] **Live Vibecodeando** - Mañana 12pm (Restream)
 
 ## Colores
 
